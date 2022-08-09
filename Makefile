@@ -7,7 +7,7 @@ build: clean
 	javac -d ./build/ @sources.txt
 
 run:
-	java -cp ./build main.java.Simulator
+	java -cp ./build main.java.com.simulator.Simulator
 
 clean:
 	rm -rf build/

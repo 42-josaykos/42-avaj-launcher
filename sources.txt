@@ -1,1 +1,1 @@
-./src/com/avaj/simulator/Simulator.java
+./src/main/java/Simulator.java

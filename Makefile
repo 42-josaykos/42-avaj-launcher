@@ -1,13 +1,15 @@
 all: build
 
 src:
-	find ./src -type f -name "*.java" > sources.txt
+	find ./src/main -type f -name "*.java" > sources.txt
 
 build: clean
 	javac -d ./build/ @sources.txt
 
 run:
-	java -cp ./build com.avaj.simulator.Simulator
-	
+	java -cp ./build main.java.Simulator
+
 clean:
 	rm -rf build/
+
+.PHONY: src
